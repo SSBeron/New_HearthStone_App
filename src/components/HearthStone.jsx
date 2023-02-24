@@ -39,12 +39,6 @@ useEffect(() => {
         {/* <h3>Class: {card.classes}</h3> */}
       </div>
     ))}
-    {cards.factions.map((card, index) => (
-      <div key={index}>
-        <h3>{card}</h3>
-        {/* <h3>Class: {card.classes}</h3> */}
-      </div>
-    ))}
   </div>
 );
 
@@ -52,3 +46,9 @@ useEffect(() => {
 
 export default HearthstoneInfo;
 
+
+{/* {cards.factions.map((card, index) => (
+  <div key={index}>
+    <h3>{card}</h3>
+  </div>
+))} */}
