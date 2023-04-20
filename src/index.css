@@ -1,5 +1,11 @@
 @import url('https://fonts.googleapis.com/css2?family=Berkshire+Swash&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Tilt+Warp&display=swap');
 
+:root{
+  --primary: #c5b663;
+  --secondary: #573214;
+  --extra: #382424;
+}
 
 *, *::before,*::after{
   box-sizing: border-box;
@@ -16,11 +22,7 @@ body {
   padding: 20px;
   font-family: "Poppins";
   background: var(--secondary);
-}
-
-:root{
-  --primary: #9e9354;
-  --secondary: #573214;
+  font-family: 'Tilt Warp', cursive;
 }
 
 /* navbar */
@@ -40,7 +42,7 @@ header nav {
 
 header nav a {
   text-decoration: none;
-  padding: 6px;
+  padding: 10px 6px;
   border-radius: 4px;
 }
 
@@ -53,4 +55,32 @@ header nav a.active {
 main {
   max-width: 1200px;
   margin: 40px auto;
+}
+
+span{
+  display: inline-block;
+  background-color: var(--primary);
+  padding: 7px 10px;
+  border-radius: 50%;
+  border: 5px solid var(--extra);
+}
+
+.box{
+  float: left;
+  /* background-color: rgba(255, 255, 255, 0.247); */
+  margin: 1vw 0 1vw 1vw;
+  /* width: 100px; */
+  /* height: 100px; */
+}
+
+img{
+  display: flex;
+  width: 30vw;
+  /* height: 30vh; */
+  /* border-radius: 30%; */
+}
+
+img:hover{
+  box-shadow: 0px 0px 50px white;
+  
 }
